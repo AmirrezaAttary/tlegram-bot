@@ -41,19 +41,12 @@ def ban_user(message):
 # آنبن کردن کاربر
 @bot.message_handler(commands=['unban'])
 def unban_user(message):
-    if message.reply_to_message:
-        user_id = message.reply_to_message.from_user.id
+    if len(message.text.split()) > 1:
+        user_id = int(message.text.split()[1])
         bot.unban_chat_member(message.chat.id, user_id)
         bot.reply_to(message, "✅ کاربر آنبن شد.")
-    elif len(message.text.split()) > 1:
-        try:
-            user_id = int(message.text.split()[1])
-            bot.unban_chat_member(message.chat.id, user_id)
-            bot.reply_to(message, "✅ کاربر آنبن شد.")
-        except ValueError:
-            bot.reply_to(message, "⚠️ لطفاً ID معتبر وارد کنید.")
     else:
-        bot.reply_to(message, "⚠️ لطفاً روی پیامی ریپلای کنید یا ID کاربر را وارد کنید.")
+        bot.reply_to(message, "⚠️ لطفاً ID کاربر را مشخص کنید.")
 
 # ارتقا به ادمین
 @bot.message_handler(commands=['promote'])
