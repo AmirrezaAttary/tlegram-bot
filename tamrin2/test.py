@@ -5,8 +5,6 @@ import re
 if not os.path.exists("downloads"):
     os.makedirs("downloads")
 
-
-
 def download_file(url):
     response = RQ.get(url, stream=True)
 
@@ -19,7 +17,6 @@ def download_file(url):
                     file.write(chunk)
     else:
         print(f'Failed to retrieve video: status code {response.status_code}')
-
 
 
 def feth(text_query):
