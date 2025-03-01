@@ -1,1 +1,16 @@
-[{'text': 'با کیفیت 144p', 'profile': '144p', 'urls': ['https://persian20.asset.aparat.com/aparat-video/f835dd55288267e29eca1b6105ea510262307670-144p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImQyOTJjNjRkYjFkYmY4NDc1NTJiMmNjOWRkOGJkYTkzIiwiZXhwIjoxNzQwNjU3NzkwLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.x9nDjutdNsKQnaUCK2zy5dXYZHXuvAi4NJDcvwfhQBs']}, {'text': 'با کیفیت 240p', 'profile': '240p', 'urls': ['https://persian20.asset.aparat.com/aparat-video/f835dd55288267e29eca1b6105ea510262307670-240p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImQyOTJjNjRkYjFkYmY4NDc1NTJiMmNjOWRkOGJkYTkzIiwiZXhwIjoxNzQwNjU3NzkwLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.x9nDjutdNsKQnaUCK2zy5dXYZHXuvAi4NJDcvwfhQBs']}, {'text': 'با کیفیت 360p', 'profile': '360p', 'urls': ['https://persian20.asset.aparat.com/aparat-video/f835dd55288267e29eca1b6105ea510262307670-360p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImQyOTJjNjRkYjFkYmY4NDc1NTJiMmNjOWRkOGJkYTkzIiwiZXhwIjoxNzQwNjU3NzkwLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.x9nDjutdNsKQnaUCK2zy5dXYZHXuvAi4NJDcvwfhQBs']}, {'text': 'با کیفیت 480p', 'profile': '480p', 'urls': ['https://persian20.asset.aparat.com/aparat-video/f835dd55288267e29eca1b6105ea510262307670-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImQyOTJjNjRkYjFkYmY4NDc1NTJiMmNjOWRkOGJkYTkzIiwiZXhwIjoxNzQwNjU3NzkwLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.x9nDjutdNsKQnaUCK2zy5dXYZHXuvAi4NJDcvwfhQBs']}, {'text': 'با کیفیت 720p', 'profile': '720p', 'urls': ['https://persian20.asset.aparat.com/aparat-video/f835dd55288267e29eca1b6105ea510262307670-720p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImQyOTJjNjRkYjFkYmY4NDc1NTJiMmNjOWRkOGJkYTkzIiwiZXhwIjoxNzQwNjU3NzkwLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.x9nDjutdNsKQnaUCK2zy5dXYZHXuvAi4NJDcvwfhQBs']}, {'text': 'با کیفیت 1080p', 'profile': '1080p', 'urls': ['https://persian20.asset.aparat.com/aparat-video/f835dd55288267e29eca1b6105ea510262307670-1080p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImQyOTJjNjRkYjFkYmY4NDc1NTJiMmNjOWRkOGJkYTkzIiwiZXhwIjoxNzQwNjU3NzkwLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.x9nDjutdNsKQnaUCK2zy5dXYZHXuvAi4NJDcvwfhQBs']}]
+get_menu - Show Menu
+contact_us - Contact Us
+referral_program - Referral Program
+choose_language - Change Language
+
+
+به Outline VPN خوش آمدید.
+
+می توانید کلید دسترسی Outline VPN خود را از منوی Get Access Key ایجاد کرده و شروع به استفاده از آن کنید.
+
+
+❖ برنامه ارجاع
+کاربران را دعوت کنید و به دلار آمریکا پاداش بگیرید.
+
+با دعوت از کاربران می توانید جوایز زیر را کسب کنید:
+• 10% کارمزد تمام سپرده های آنها.
