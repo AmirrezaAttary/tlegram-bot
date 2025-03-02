@@ -14,12 +14,26 @@ def get_regin():
         print(i["region_name"])
         print("************************")
 
-data = {
-    'region_slug' : 'iran'
-}
-regions_url = "https://api.getoutlinevpn.com/get-locations"
-regions_response = requests.get(regions_url, headers=headers,json=data)
-regions_data = regions_response.json()
-print(regions_data)
+def get_port():
+    data = {
+        'region_slug' : 'iran'
+    }
+    regions_url = "https://api.getoutlinevpn.com/get-port-type"
+    regions_response = requests.get(regions_url, headers=headers,json=data)
+    regions_data = regions_response.json()['port_type']
+    for port in regions_data:
+        print(port["port_type"])
 
 
+def get_location():
+    data = {
+        'region_slug' : 'iran'
+    }
+    regions_url = "https://api.getoutlinevpn.com/get-locations"
+    regions_response = requests.get(regions_url, headers=headers,json=data)
+    regions_data = regions_response.json()['outline_locations']
+    for location in regions_data:
+        print("*************************************************")
+        print(location["country_name"] , "--",location["country_slug"])
+
+get_location()
