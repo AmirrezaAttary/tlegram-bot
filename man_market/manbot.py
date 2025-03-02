@@ -96,4 +96,47 @@ def Get_Access_Key_handler(message):
         text='انتخاب کشور محل اقامت:',
         reply_markup=markup
     )
+    
+@bot.message_handler(regexp="❓سایر عملیات$")
+def other_operations_handler(message):
+    markup = InlineKeyboardMarkup()
+    What_Outline = InlineKeyboardButton('outline VPN چیست❓',callback_data='what_outline')
+    Why_Outline = InlineKeyboardButton('❔چرا outline VPN',callback_data='why_outline')
+    Outline_Secure = InlineKeyboardButton('❓طرح کلی امن است',callback_data="outline_secure")
+    Why_Use = InlineKeyboardButton('❔چرا از VPN استفاده کنید',callback_data="why_use")
+    How_To_Outline = InlineKeyboardButton('🛠️نحوه استفاده از Outline VPN',callback_data="how_to_outline")
+    App_Center = InlineKeyboardButton('💠مرکز درخواست',callback_data="app_center")
+    Trouble = InlineKeyboardButton('🔧عیب یابی',callback_data="trouble")
+    all_operator = [
+        What_Outline,
+        Why_Outline,
+        Outline_Secure,
+        Why_Use,
+        How_To_Outline,
+        App_Center,
+        Trouble,
+    ]
+    for operator in all_operator:
+        markup.add(operator)
+        
+    
+    Price_List = InlineKeyboardButton('💵لیست قیمت',callback_data="price_list")
+    Refr_Program = InlineKeyboardButton('🤝برنامه ارجاع',callback_data="refr_program")
+    markup.add(Price_List,Refr_Program)
+    Quest = InlineKeyboardButton('🏆تلاش برای عصر',callback_data="quest")
+    Play = InlineKeyboardButton('🎮بازی کنید و کسب درآمد کنید',callback_data="play")
+    markup.add(Quest,Play)
+    About = InlineKeyboardButton("❕در مورد ما",callback_data="about")
+    System_Status = InlineKeyboardButton('👁️وضعیت سیستم',callback_data="system_status")
+    markup.add(About,System_Status)
+    
+    
+    
+    bot.send_message(
+        chat_id=message.chat.id,
+        text="عملیاتی را که می خواهید انجام دهید انتخاب کنید:",
+        reply_markup=markup
+    )
+    
+    
 bot.infinity_polling()

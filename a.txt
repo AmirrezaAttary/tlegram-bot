@@ -1,16 +1,10 @@
-get_menu - Show Menu
-contact_us - Contact Us
-referral_program - Referral Program
-choose_language - Change Language
-
-
-به Outline VPN خوش آمدید.
-
-می توانید کلید دسترسی Outline VPN خود را از منوی Get Access Key ایجاد کرده و شروع به استفاده از آن کنید.
-
-
-❖ برنامه ارجاع
-کاربران را دعوت کنید و به دلار آمریکا پاداش بگیرید.
-
-با دعوت از کاربران می توانید جوایز زیر را کسب کنید:
-• 10% کارمزد تمام سپرده های آنها.
+{'status': True, 
+'regions_of_residence': 
+[
+{'region_slug': 'china', 'region_name': 'Resident in China'},
+{'region_slug': 'iran', 'region_name': 'Resident in Iran'},
+{'region_slug': 'other', 'region_name': 'Residents of Other Countries'},
+{'region_slug': 'russia', 'region_name': 'Resident in Russia'},
+{'region_slug': 'ukraine', 'region_name': 'Resident in Ukraine'}
+]
+} 
