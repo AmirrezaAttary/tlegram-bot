@@ -66,3 +66,26 @@
                                                 {'country_name': 'Ukraine', 'country_slug': 'ua'},
                                                  {'country_name': 'USA', 'country_slug': 'us'}
                                                  ]}
+
+
+
+
+{'status': True,
+ 'outline_plans': [
+   {'plan_id': 29, 'period': '1', 'period_unit': 'Day', 'bandwidth': '50', 'bandwidth_unit': 'GB', 'price': '0.50', 'currency': 'USD'},
+   {'plan_id': 30, 'period': '1', 'period_unit': 'Day', 'bandwidth': '100', 'bandwidth_unit': 'GB', 'price': '0.83', 'currency': 'USD'}, {'plan_id': 31, 'period': '1', 'period_unit': 'Day', 'bandwidth': '300', 'bandwidth_unit': 'GB', 'price': '1.66', 
+'currency': 'USD'}, {'plan_id': 32, 'period': '1', 'period_unit': 'Day', 'bandwidth': '500', 'bandwidth_unit': 'GB', 'price': '2.50', 'currency': 'USD'}, {'plan_id': 33, 'period': '1', 'period_unit': 'Day', 'bandwidth': '1000', 'bandwidth_unit': 'GB', 'price': '4.16', 'currency': 'USD'}, {'plan_id': 57, 'period': '30', 'period_unit': 'Day', 'bandwidth': '15', 'bandwidth_unit': 'GB', 'price': '1.00', 'currency': 'USD'}, {'plan_id': 43, 'period': '30', 'period_unit': 'Day', 'bandwidth': '1000', 'bandwidth_unit': 'GB', 'price': '33.60', 'currency': 'USD'}, {'plan_id': 42, 'period': '30', 'period_unit': 'Day', 'bandwidth': '500', 'bandwidth_unit': 'GB', 'price': '19.60', 'currency': 'USD'}, {'plan_id': 41, 'period': '30', 'period_unit': 'Day', 'bandwidth': '300', 'bandwidth_unit': 'GB', 'price': '13.44', 'currency': 'USD'}, 
+{'plan_id': 40, 'period': '30', 'period_unit': 'Day', 'bandwidth': '100', 'bandwidth_unit': 'GB', 'price': '5.04', 'currency': 'USD'}, {'plan_id': 39, 'period': '30', 'period_unit': 'Day', 'bandwidth': '50', 
+'bandwidth_unit': 'GB', 'price': '2.80', 'currency': 'USD'}, {'plan_id': 55, 'period': '365', 'period_unit': 'Day', 'bandwidth': '12000', 'bandwidth_unit': 'GB', 'price': '362.88', 'currency': 'USD'}, {'plan_id': 54, 'period': '365', 'period_unit': 'Day', 'bandwidth': '6000', 'bandwidth_unit': 'GB', 'price': '211.68', 'currency': 'USD'}, {'plan_id': 53, 'period': '365', 'period_unit': 'Day', 'bandwidth': '3600', 
+'bandwidth_unit': 'GB', 'price': '145.15', 'currency': 'USD'}, {'plan_id': 52, 'period': '365', 'period_unit': 'Day', 'bandwidth': '1200', 'bandwidth_unit': 'GB', 'price': '54.43', 'currency': 'USD'}, {'plan_id': 51, 'period': '365', 'period_unit': 'Day', 'bandwidth': '600', 'bandwidth_unit': 'GB', 'price': '30.24', 'currency': 'USD'}, {'plan_id': 49, 'period': '90', 'period_unit': 'Day', 'bandwidth': '3000', 'bandwidth_unit': 'GB', 'price': '95.76', 'currency': 'USD'}, {'plan_id': 48, 'period': '90', 'period_unit': 'Day', 'bandwidth': '1500', 'bandwidth_unit': 'GB', 'price': '55.86', 'currency': 'USD'}, {'plan_id': 
+47, 'period': '90', 'period_unit': 'Day', 'bandwidth': '900', 'bandwidth_unit': 'GB', 'price': '38.30', 'currency': 'USD'}, {'plan_id': 46, 'period': '90', 'period_unit': 'Day', 'bandwidth': '300', 'bandwidth_unit': 'GB', 'price': '14.36', 'currency': 'USD'}, {'plan_id': 45, 'period': '90', 'period_unit': 'Day', 'bandwidth': '150', 'bandwidth_unit': 'GB', 'price': '7.98', 'currency': 'USD'}]}
+
+
+
+'{"plan_id":"your_plan_id",
+"region_slug":"your_region_slug",
+"country_slug":"your_country_slug",
+"port_type":"your_port_type"}'
+
+
+{'status': True, 'vpn_client_profiles': [{'access_key_name': '8295d7ede8', 'country_slug': 'us', 'country_flag': 'xxx'}]}
