@@ -1,6 +1,6 @@
 import requests
 
-api_token = "e0968073-0a88-43dc-be68-150b91dcf8c5"
+api_token = "c9a43188-24d9-4ed4-b14a-b40a1e79f35e"
 headers = {
     "Content-Type": "application/json",
     "X-OUTLINE-BOT-API-SECRET-TOKEN": api_token
@@ -69,6 +69,8 @@ def create_access_key():
         print(f"خطای HTTP رخ داد: {http_err}")
     except Exception as err:
         print(f"خطای عمومی رخ داد: {err}")
+        
+# create_access_key()
 
 
 def list_access_keys():
@@ -86,4 +88,4 @@ def get_access_key():
     regions_response = requests.get(regions_url, headers=headers,json=data)
     regions_data = regions_response.json()
     print(regions_data)
-get_access_key()
+# get_access_key()

@@ -89,3 +89,6 @@
 
 
 {'status': True, 'vpn_client_profiles': [{'access_key_name': '8295d7ede8', 'country_slug': 'us', 'country_flag': 'xxx'}]}
+
+
+{'status': True, 'access_key_name': '873a1a6dba', 'access_key': 'ssconf://npveniltuo.com/en/873a1a6dba/abfa7a0be2#873a1a6dba'}
