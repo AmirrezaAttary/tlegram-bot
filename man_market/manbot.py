@@ -7,14 +7,15 @@ import random
 from button_man import (main_menu, other_menu, contact_button,
                         referral_program_button, choose_language_button,
                         Get_Access_Key_button, callback_other_button,
-                        app_center_button)
+                        app_center_button, referral_program_button_inline)
 from text_man import (start_text, get_menu_text, contact_text,
                       referral_program_text,choose_language_text,
                       get_access_key_text,other_operations_text,
                       what_outline_text,why_outline_text,
                       cancel_text,outline_secure_text,why_use_text,
                       how_to_outline_text,app_center_text,
-                      price_list_text)
+                      price_list_text,quest_text,play_text,
+                      about_text,system_status_text)
 
 API_MANMARKET = os.environ.get('API_MANMARKET')
 bot = telebot.TeleBot(API_MANMARKET)
@@ -190,7 +191,7 @@ def callback_other_handler(call):
             text=price_list_text,
             reply_markup=callback_other_button()
             )
-    # QUERY PRICE LIST
+    # QUERY REFR PEOGRAM
     elif call.data == "refr_program":
         '''
         When callback data was equal to refr_program
@@ -198,8 +199,53 @@ def callback_other_handler(call):
         bot.edit_message_text(
             chat_id=call.message.chat.id,
             message_id=call.message.id,
-            text=price_list_text,
-            reply_markup=referral_program_button()
+            text=referral_program_text,
+            parse_mode="Markdown",
+            reply_markup=referral_program_button_inline()
+            )
+    # QUERY QUEST
+    elif call.data == "quest":
+        '''
+        When callback data was equal to quest
+        '''
+        bot.edit_message_text(
+            chat_id=call.message.chat.id,
+            message_id=call.message.id,
+            text=quest_text,
+            reply_markup=callback_other_button()
+            )
+    # QUERY PLAY
+    elif call.data == "play":
+        '''
+        When callback data was equal to play
+        '''
+        bot.edit_message_text(
+            chat_id=call.message.chat.id,
+            message_id=call.message.id,
+            text=play_text,
+            reply_markup=callback_other_button()
+            )
+    # QUERY ABOUT
+    elif call.data == "about":
+        '''
+        When callback data was equal to about
+        '''
+        bot.edit_message_text(
+            chat_id=call.message.chat.id,
+            message_id=call.message.id,
+            text=about_text,
+            reply_markup=callback_other_button()
+            )
+    # QUERY SYSTEM STATUS
+    elif call.data == "system_status":
+        '''
+        When callback data was equal to system_status
+        '''
+        bot.edit_message_text(
+            chat_id=call.message.chat.id,
+            message_id=call.message.id,
+            text=system_status_text,
+            reply_markup=callback_other_button()
             )
     # QUERY BACK OTHER
     elif call.data == "back_other":
@@ -222,5 +268,7 @@ def callback_other_handler(call):
             message_id=call.message.id,
             text=cancel_text,
             )
+
+
 
 bot.infinity_polling()

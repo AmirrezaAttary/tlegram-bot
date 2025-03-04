@@ -61,6 +61,16 @@ def referral_program_button():
     markup.add(Cancel)
     return markup
 
+def referral_program_button_inline():
+    markup = InlineKeyboardMarkup()
+    Share = InlineKeyboardButton('🔗به اشتراک بگذارید',callback_data='share')
+    Referral_Details = InlineKeyboardButton('جزئیات ارجاع',callback_data='referral_details')
+    markup.add(Share,Referral_Details)
+    Go_Back = InlineKeyboardButton("برگشت",callback_data="back_other")
+    markup.add(Go_Back)
+    return markup
+
+
 def choose_language_button():
     markup = InlineKeyboardMarkup()
     Engilsh = InlineKeyboardButton('🇺🇸English',callback_data='english')
