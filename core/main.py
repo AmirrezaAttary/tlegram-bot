@@ -1,65 +1,6 @@
-# import telebot
-# import os
-# import pprint
-# import logging
-# import json
-
-# logger = telebot.logger
-# telebot.logger.setLevel(logging.INFO)
-
-# API_TOKEN = os.environ.get('API_TOKEN')
-
-# bot = telebot.TeleBot(API_TOKEN)
-
-# @bot.message_handler(commands=['start', 'help'])
-# def send_welcome(message):
-# 	pprint.pprint(message.__dict__,width=4)
-#     # bot.reply_to(message, "سلام! چطور می‌تونم کمکتون کنم؟")
-
-
-# @bot.message_handler(regexp="ali")
-# def handle_message(message):
-# 	bot.reply_to(message,'alo gay')
-
-# # Handles all sent documents and audio files
-# @bot.message_handler(content_types=['document', 'audio'])
-# def handle_docs_audio(message):
-#     if message.content_type == 'document':
-#         print('its a document')
-#     elif message.content_type == 'audio':
-#         print('its a audio')
-
-# bot.infinity_polling()
-
-# import telebot
-# from telebot import types
-# import os
-
-# API_TOKEN = os.environ.get('API_TOKEN')
-# bot = telebot.TeleBot(API_TOKEN)
-
-# # ایجاد یک کیبورد پاسخ با دو گزینه: "دستور اول" و "دستور دوم"
-# keyboard = types.ReplyKeyboardMarkup(row_width=2, resize_keyboard=True,input_field_placeholder='وارد کن',one_time_keyboard=True,)
-# button1 = types.KeyboardButton("دستور اول")
-# button2 = types.KeyboardButton("دستور دوم")
-# keyboard.add(button1, button2)
-
-# @bot.message_handler(commands=['start'])
-# def send_welcome(message):
-#     bot.reply_to(message, "سلام! یکی از دستورات زیر را انتخاب کنید:", reply_markup=keyboard)
-
-# @bot.message_handler(func=lambda message: True)
-# def echo_all(message):
-#     bot.reply_to(message, message.text, reply_markup=keyboard)
-
-# # شروع گوش دادن به درخواست‌ها
-# bot.infinity_polling()
-
-
-
 import telebot
 from telebot import types
-import os
+import os 
 
 API_TOKEN = os.environ.get('API_TOKEN')
 bot = telebot.TeleBot(API_TOKEN)

@@ -88,4 +88,3 @@ def get_access_key():
     regions_response = requests.get(regions_url, headers=headers,json=data)
     regions_data = regions_response.json()
     print(regions_data)
-# get_access_key()
