@@ -1,9 +1,5 @@
 import telebot
-import requests
 import os
-from telebot.types import (ReplyKeyboardMarkup, KeyboardButton,
-                           InlineKeyboardMarkup, InlineKeyboardButton)
-import random
 from button_man import (main_menu, other_menu, contact_button,
                         referral_program_button, choose_language_button,
                         Get_Access_Key_button, callback_other_button,
