@@ -1,7 +1,8 @@
 import telebot
 import sqlite3
 import os
-from telebot.types import ReplyKeyboardMarkup, KeyboardButton
+import random
+from telebot.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 
 # دریافت توکن بات از متغیر محیطی
 API_MANMARKET = os.environ.get('API_MANMARKET')
@@ -47,9 +48,9 @@ messages = {
 def main_menu(language):
     markup = ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
     buttons = {
-        "fa": ["🖋️دریافت کلید دسترسی", "📋کلیدهای دسترسی به فهرست", "💎تعادل را بررسی کنید", "🌍 تغییر زبان"],
-        "en": ["🖋️Get Access Key", "📋List Access Keys", "💎Check Balance", "🌍 Change Language"],
-        "tr": ["🖋️Erişim Anahtarını Al", "📋Erişim Anahtarları Listesi", "💎Bakiye Kontrolü", "🌍 Dili Değiştir"]
+        "fa": ["🖋️دریافت کلید دسترسی", "📋کلیدهای دسترسی به فهرست", "💎تعادل را بررسی کنید", "💳پرداخت", "❓سایر عملیات", "🌍 تغییر زبان"],
+        "en": ["🖋️Get Access Key", "📋List Access Keys", "💎Check Balance", "💳Payment", "❓Other Operations", "🌍 Change Language"],
+        "tr": ["🖋️Erişim Anahtarını Al", "📋Erişim Anahtarları Listesi", "💎Bakiye Kontrolü", "💳Ödeme", "❓Diğer İşlemler", "🌍 Dili Değiştir"]
     }
     markup.add(*buttons[language])
     return markup
@@ -59,6 +60,11 @@ def start_handler(message):
     user_id = message.chat.id
     language = get_user_language(user_id)
     bot.send_message(chat_id=user_id, text=messages['welcome'][language], reply_markup=main_menu(language))
+
+@bot.message_handler(commands=["get_menu"])
+def get_menu_handler(message):
+    language = get_user_language(message.chat.id)
+    bot.send_message(chat_id=message.chat.id, text=messages['choose_language'][language], reply_markup=main_menu(language))
 
 @bot.message_handler(regexp='🌍 تغییر زبان|🌍 Change Language|🌍 Dili Değiştir')
 def change_language_handler(message):
