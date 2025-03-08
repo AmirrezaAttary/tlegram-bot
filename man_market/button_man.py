@@ -74,8 +74,9 @@ def referral_program_button_inline():
 def choose_language_button():
     markup = InlineKeyboardMarkup()
     Engilsh = InlineKeyboardButton('🇺🇸English',callback_data='english')
+    Persian = InlineKeyboardButton('🇮🇷Persian',callback_data='persian')
     Turkish = InlineKeyboardButton('🇹🇷Turkish',callback_data='turkish')
-    markup.add(Engilsh,Turkish)
+    markup.add(Engilsh,Persian,Turkish)
     Cancel = InlineKeyboardButton('❌لغو',callback_data='cancel')
     markup.add(Cancel)
     return markup
@@ -113,5 +114,28 @@ def app_center_button():
     Android_APK = InlineKeyboardButton('برنامه اندروید',url="https://s3.amazonaws.com/outline-releases/client/android/stable/Outline-Client.apk")
     markup.add(Android_APK)
     Go_Back = InlineKeyboardButton("برگشت",callback_data="back_other")
+    markup.add(Go_Back)
+    return markup
+
+
+def trouble_button():
+    markup = InlineKeyboardMarkup()
+    Web_Page = InlineKeyboardButton('صفحات وب به کندی بارگذاری می شوند؟',callback_data='web_page')
+    Server_Config = InlineKeyboardButton('پیکربندی غیرقانونی سرور',callback_data='server_config')
+    Ipc_Start = InlineKeyboardButton('outline-ipc شروع به پروکسی می کند',callback_data='ipc_start')
+    Unexpected_Error = InlineKeyboardButton('خطای غیرمنتظره - خطای رخ داده است',callback_data='unexpected_error')
+    Vpn_Permission = InlineKeyboardButton('مجوز VPN داده نشده است',callback_data='vpn_permission')
+    Connected = InlineKeyboardButton('متصل است اما دسترسی به اینترنت ندارد',callback_data='connected')
+    ERR_Routing = InlineKeyboardButton('خطای سرویس مسیریابی اجرا نمی شود',callback_data='err_routing') 
+    Iphone8_Older = InlineKeyboardButton('آیفون 8 یا قدیمی تر',callback_data='iphone8_older')
+    Go_Back = InlineKeyboardButton("برگشت",callback_data="back_other")
+    all_trouble = [Web_Page,Server_Config,Ipc_Start,Unexpected_Error,Vpn_Permission,Connected,ERR_Routing,Iphone8_Older,Go_Back]
+    for trouble in all_trouble:
+        markup.add(trouble)
+    return markup
+
+def back_trouble():
+    markup = InlineKeyboardMarkup()
+    Go_Back = InlineKeyboardButton("برگشت",callback_data="trouble")
     markup.add(Go_Back)
     return markup

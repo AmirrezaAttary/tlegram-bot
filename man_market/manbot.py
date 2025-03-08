@@ -1,20 +1,12 @@
 import telebot
 import os
-from button_man import (main_menu, other_menu, contact_button,
-                        referral_program_button, choose_language_button,
-                        Get_Access_Key_button, callback_other_button,
-                        app_center_button, referral_program_button_inline)
-from text_man import (start_text, get_menu_text, contact_text,
-                      referral_program_text,choose_language_text,
-                      get_access_key_text,other_operations_text,
-                      what_outline_text,why_outline_text,
-                      cancel_text,outline_secure_text,why_use_text,
-                      how_to_outline_text,app_center_text,
-                      price_list_text,quest_text,play_text,
-                      about_text,system_status_text)
+from button_man import *
+from text_man import *
 
 API_MANMARKET = os.environ.get('API_MANMARKET')
 bot = telebot.TeleBot(API_MANMARKET)
+
+user_languages = {}
 
 
 # START
@@ -176,6 +168,17 @@ def callback_other_handler(call):
             text=app_center_text,
             reply_markup=app_center_button()
             )
+        # QUERY TROUBLE
+    elif call.data == "trouble":
+        '''
+        When callback data was equal to trouble
+        '''
+        bot.edit_message_text(
+            chat_id=call.message.chat.id,
+            message_id=call.message.id,
+            text=trouble_text,
+            reply_markup=trouble_button()
+            )
     # QUERY PRICE LIST
     elif call.data == "price_list":
         '''
@@ -243,6 +246,7 @@ def callback_other_handler(call):
             text=system_status_text,
             reply_markup=callback_other_button()
             )
+        
     # QUERY BACK OTHER
     elif call.data == "back_other":
         '''
@@ -264,7 +268,95 @@ def callback_other_handler(call):
             message_id=call.message.id,
             text=cancel_text,
             )
+    # QUERY WEB PAGE
+    elif call.data == "web_page":
+        '''
+        When callback data was equal to web_page
+        '''
+        bot.edit_message_text(
+            chat_id=call.message.chat.id,
+            message_id=call.message.id,
+            text=web_page_text,
+            reply_markup=back_trouble()
+            )
+    # QUERY SERVER CONFIG
+    elif call.data == "server_config":
+        '''
+        When callback data was equal to server_config
+        '''
+        bot.edit_message_text(
+            chat_id=call.message.chat.id,
+            message_id=call.message.id,
+            text=server_config_text,
+            reply_markup=back_trouble()
+            )
+    # QUERY IPC START
+    elif call.data == "ipc_start":
+        '''
+        When callback data was equal to ipc_start
+        '''
+        bot.edit_message_text(
+            chat_id=call.message.chat.id,
+            message_id=call.message.id,
+            text=ipc_start_text,
+            reply_markup=back_trouble()
+        )
+    # QUERY UNEXPECTED ERROR
+    elif call.data == "unexpected_error":
+        '''
+        When callback data was equal to unexpected_error
+        '''
+        bot.edit_message_text(
+            chat_id=call.message.chat.id,
+            message_id=call.message.id,
+            text=unexpected_error_text,
+            reply_markup=back_trouble()
+        )
 
+    # QUERY VPN PERMINSSION
+    elif call.data == "vpn_permission":
+        '''
+        When callback data was equal to vpn_permission
+        '''
+        bot.edit_message_text(
+            chat_id=call.message.chat.id,
+            message_id=call.message.id,
+            text=vpn_permission_text,
+            reply_markup=back_trouble()
+        )
 
+    # QUERY CONNECTED
+    elif call.data == "connected":
+        '''
+        When callback data was equal to connected
+        '''
+        bot.edit_message_text(
+            chat_id=call.message.chat.id,
+            message_id=call.message.id,
+            text=connected_text,
+            reply_markup=back_trouble()
+        )
+    # QUERY ERR ROUTING
+    elif call.data == "err_routing":
+        '''
+        When callback data was equal to err_routing
+        '''
+        bot.edit_message_text(
+            chat_id=call.message.chat.id,
+            message_id=call.message.id,
+            text=connected_text,
+            reply_markup=back_trouble()
+        )
+    # QUERY IPHONE8 OLDER
+    elif call.data == "iphone8_older":
+        '''
+        When callback data was equal to iphone8_older
+        '''
+        bot.edit_message_text(
+            chat_id=call.message.chat.id,
+            message_id=call.message.id,
+            text=iphone8_older_text,
+            reply_markup=back_trouble()
+        )
 
 bot.infinity_polling()
