@@ -4,7 +4,10 @@ All text variables in the bot
 '''
 
 import random
-start_text = 'به Outline VPN خوش آمدید.\n می توانید کلید دسترسی Outline VPN خود را از منوی Get Access Key ایجاد کرده و شروع به استفاده از آن کنید.'
+start_text = {
+    'fa':'به Outline VPN خوش آمدید.\n می توانید کلید دسترسی Outline VPN خود را از منوی Get Access Key ایجاد کرده و شروع به استفاده از آن کنید.',
+    'en':'به Outline VPN خوش آمدید.\n می توانید کلید دسترسی Outline VPN خود را از منوی Get Access Key ایجاد کرده و شروع به استفاده از آن کنید.'
+    }
 
 get_menu_text = 'عملیاتی را که می خواهید انجام دهید انتخاب کنید:'
 

@@ -21,6 +21,7 @@ def download_file(url):
 
 def feth(text_query):
     url = f'https://www.aparat.com/api/fa/v1/video/video/show/videohash/{text_query}'
+    print(url)
     respanse = RQ.get(url=url)
     res_js = respanse.json()['data']["attributes"]["file_link_all"]
     for item in res_js:
@@ -50,3 +51,5 @@ def re_text_input(url):
         video_id = match.group(1)
         feth(video_id)
         
+        
+feth('tekv162')

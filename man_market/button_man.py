@@ -73,8 +73,8 @@ def referral_program_button_inline():
 
 def choose_language_button():
     markup = InlineKeyboardMarkup()
-    Engilsh = InlineKeyboardButton('🇺🇸English',callback_data='english')
-    Persian = InlineKeyboardButton('🇮🇷Persian',callback_data='persian')
+    Engilsh = InlineKeyboardButton('🇺🇸English',callback_data='en')
+    Persian = InlineKeyboardButton('🇮🇷Persian',callback_data='fa')
     Turkish = InlineKeyboardButton('🇹🇷Turkish',callback_data='turkish')
     markup.add(Engilsh,Persian,Turkish)
     Cancel = InlineKeyboardButton('❌لغو',callback_data='cancel')
